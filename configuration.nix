@@ -118,7 +118,7 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."kirigirisu" = {
+  users.users."nettzsu" = {
     isNormalUser = true;
     description = "Maximilian Kuzniatsou";
     extraGroups = [ "networkmanager" "wheel" "audio" ];
@@ -180,7 +180,7 @@
   # Enable Nix Helper.
   programs.nh = {
     enable = true;
-    flake = "/home/kirigirisu/nixfiles";
+    flake = "/home/nettzsu/nixfiles";
   };
 
   # Enable nix-ld.
@@ -214,7 +214,7 @@
 
   # Enable zsh.
   programs.zsh.enable = true;
-  users.users.kirigirisu.shell = pkgs.zsh;
+  users.users.nettzsu.shell = pkgs.zsh;
 
   # Enable musnix.
   musnix.enable = true;

@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:
 
 {
-  home-manager.users.kirigirisu = {
+  home-manager.users.nettzsu = {
     # Import the home manager module
     imports = [
       inputs.noctalia.homeModules.default
@@ -14,11 +14,11 @@
 	shell.font = "Iosevka Nerd Font";
 	wallpaper = {
 	  enabled = true;
-          directory = "/home/kirigirisu/nixfiles/wallpapers/";
+          directory = "/home/nettzsu/nixfiles/wallpapers/";
           fill_mode = "crop";
 
           default = {
-            path = "/home/kirigirisu/nixfiles/wallpapers/nixos02.png";
+            path = "/home/nettzsu/nixfiles/wallpapers/nixos02.png";
           };
 	};
       };

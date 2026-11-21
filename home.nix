@@ -3,8 +3,8 @@
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "kirigirisu";
-  home.homeDirectory = "/home/kirigirisu";
+  home.username = "nettzsu";
+  home.homeDirectory = "/home/nettzsu";
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
@@ -60,7 +60,7 @@
   # };
   programs.firefox = {
     enable = true;
-    profiles.kirigirisu = {
+    profiles.nettzsu = {
       id = 0;
       isDefault = true;
     };
@@ -77,7 +77,7 @@
   services.syncthing.enable = true;
 
   stylix.targets = {
-    firefox.profileNames = [ "kirigirisu" ];
+    firefox.profileNames = [ "nettzsu" ];
     rofi.enable = false;
   };
 

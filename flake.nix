@@ -47,7 +47,7 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.extraSpecialArgs = { inherit inputs; };
-              home-manager.users.kirigirisu = ./home.nix;
+              home-manager.users.nettzsu = ./home.nix;
 	      home-manager.backupFileExtension = "backup";
             }
           ];

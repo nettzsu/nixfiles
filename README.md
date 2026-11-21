@@ -40,7 +40,7 @@
 
 <img width="1920" height="1080" alt="nykr" src="https://github.com/user-attachments/assets/d89f744c-4a62-4223-98b2-9f89f1deff9b" />
 <p align="center">
-  <samp>kirigirisu@nykr</samp>
+  <samp>nettzsu@nykr</samp>
 </p>
 
 This is my very first NixOS configuration; it will improve gradually.
@@ -68,7 +68,7 @@ There's also a small Rust dev shell template in `templates/rust/` that I use for
    nixos-generate-config --show-hardware-config > hardware-configuration.nix
 ```
 
-**Step 3.** Change the username (`kirigirisu`) and hostname (`nykr`) to yours in `flake.nix`, `configuration.nix` and `home.nix`.
+**Step 3.** Change the username (`nettzsu`) and hostname (`nykr`) to yours in `flake.nix`, `configuration.nix` and `home.nix`.
 
 **Step 4.** Build and switch:
 ```sh
