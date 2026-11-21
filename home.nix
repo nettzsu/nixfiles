@@ -33,6 +33,8 @@
     papers
     loupe
     gimp
+    inkscape
+    krita
     uv
   ];
 
