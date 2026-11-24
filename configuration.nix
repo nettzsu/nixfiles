@@ -243,6 +243,21 @@
     };
   };
 
+  # Enable Tailscale.
+  services.tailscale.enable = true;
+
+  # Enable OpenSSH.
+  services.openssh = {
+    enable = true;
+    openFirewall = false;
+  
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      PermitRootLogin = "no";
+    };
+  };
+
   
   # Install fonts.
   fonts.packages = with pkgs; [
