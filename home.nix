@@ -12,6 +12,7 @@
     btop
     ffmpeg
     ripgrep
+    libnotify
     codex
     opencode
     grok-build
