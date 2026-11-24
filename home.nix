@@ -8,6 +8,7 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    inputs.herdr-nix.packages.${stdenv.hostPlatform.system}.default
     btop
     ffmpeg
     ripgrep

@@ -23,10 +23,11 @@
       url = "github:musnix/musnix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    tidalcycles= {
+    tidalcycles = {
       url = "github:mitchmindtree/tidalcycles.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    herdr-nix.url = "github:herdrdev/herdr-nix";
   };
 
   outputs =
