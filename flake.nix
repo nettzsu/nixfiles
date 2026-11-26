@@ -28,6 +28,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     herdr-nix.url = "github:herdrdev/herdr-nix";
+    hermes-agent.url = "github:NousResearch/hermes-agent";
   };
 
   outputs =

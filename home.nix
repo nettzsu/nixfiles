@@ -54,6 +54,7 @@
     ./home-manager/obs-studio.nix
     ./home-manager/direnv.nix
     ./home-manager/tidalcycles.nix
+    inputs.hermes-agent.homeManagerModules.default
   ];
 
   # Customize modules here.
@@ -77,6 +78,14 @@
     config = {
       osc = false;
     };
+  };
+  programs.hermes-agent.enable = true;
+
+  services.hermes-agent = {
+    enable = true;
+    gateway.enable = true;
+    settings.model.default = "upstage/solar-mini4:free";
+    environmentFiles = [ "/home/nettzsu/.config/hermes/env" ];
   };
 
   services.syncthing.enable = true;
