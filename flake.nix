@@ -35,6 +35,10 @@
     inputs@{ nixpkgs, home-manager, niri, stylix, musnix, ... }:
     {
       nixosConfigurations = {
+        gestirn = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [ ./hosts/gestirn/configuration.nix ];
+        };
         nykr = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
 	  specialArgs = { inherit inputs; };
